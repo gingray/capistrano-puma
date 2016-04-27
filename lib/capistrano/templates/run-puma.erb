@@ -1,7 +1,7 @@
 #!/bin/bash
 app=$1;
 cd $app || exit 1
-<% if fetch(:puma_rvm) %>
+<% if fetch(:puma_rvm) == :rvm %>
 source /etc/profile.d/rvm.sh
 <% end %>
 if [ -e Gemfile ]; then

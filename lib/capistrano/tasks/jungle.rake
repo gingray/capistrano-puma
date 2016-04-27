@@ -2,7 +2,7 @@ namespace :load do
   task :defaults do
     set :puma_jungle_conf, '/etc/puma.conf'
     set :puma_run_path, '/usr/local/bin/run-puma'
-    set :puma_rvm, false
+    set :puma_rvm, :other
   end
 end
 
